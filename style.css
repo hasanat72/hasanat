@@ -127,8 +127,7 @@
 }
 .projects{
 	text-align: left;
-	float: left;
-	margin-left: 150px;
+	margin-left: 120px;
 	width: auto;
 	color: #7f8c8d;
 }
@@ -293,4 +292,9 @@
 	-webkit-transform: skewX(60deg); /* Safari */
     transform: skewy(60deg);
     transform: skewy(60deg);
+}
+
+.intro_nlp{
+	margin-left: 30px;
+	color: red;
 }
