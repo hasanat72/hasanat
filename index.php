@@ -41,32 +41,35 @@
 				<a href="https://www.facebook.com/ali.hasanat72" class="fa fa-facebook" target="_blank"></a>
 				<a href="landing.html" class="fa fa-globe" target="_blank"></a>
 				<a href="hobby.html" class="fa fa-camera" target="_blank"></a>
+
 			</div>
 			<div id="education">
 				<h4 style="color: #34495e">Education:</h4>	
 				<p style="color:  #34495e; margin-top: -20px;margin-left: 40px">Computer Science and Engineering<br>NSU</p>
 				
 			</div>
+
 			<div></div>
 			<div class="project">
 				<p>Projects:</p>
-				
-			</div>
-
 				<div class="projects">
 					<p>1.Photography Club management<br>System</p>
 					<p>2.GPS Based Car Monitoring<br>System</p>
 					<p>3.Car Pooling<br>System</p>
+					<p> <a href="projects.html">Self Learning</a> </p>
+					<form action="contact.html" method="post">
+						<button type="submit">Contact Me</button>
+					</form>
 
 				</div>
+				
+			</div>
+
+
 				</div>
 			</div>
 			<br>
-			<div id="contact">
-					<form action="contact.html">
-						<p><input class="button" type="submit" value="Contact Me"></p>
-					</form>
-			</div>
+			
 			
 </body>
 </body>
