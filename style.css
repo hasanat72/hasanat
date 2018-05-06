@@ -3,6 +3,7 @@
 	background-color: #f7f9f9;
 	margin-top: 50px;
 
+
 }
 #name{
 	background-color: #f7f9f9;
@@ -44,9 +45,11 @@
 	transition: width 0.5s;
 	
 }
+/*
 .side_div:hover{
 	width: 300px;
 }
+*/
 .text{
 	color:  #424949 ;
 	text-transform: uppercase;
@@ -123,7 +126,8 @@
 .project{
 	float: left;
 	width: auto;
-	color: #7f8c8d;
+	color:  #283747 ;
+	margin-bottom: 20px;
 }
 .projects{
 	text-align: left;
@@ -297,4 +301,8 @@
 .intro_nlp{
 	margin-left: 30px;
 	color: red;
+}
+
+#academic{
+	margin-bottom: 100px;
 }
