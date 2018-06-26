@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>To do List</title>
+	<meta charset="utf-8">
+	<!-- browser specification -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- convert pages width to the browsers width -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- add css bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body onload="fetchTasks()">
+	<div class="container">
+		<h1>List your priorities</h1>
+		
+		<marquee behavior="scroll" bgcolor="#F3BCB0" loop="-1" width="30%">
+   <i>
+      <font color="blue">
+        Today's date is : 
+        <strong>
+         <span id="time"></span>
+        </strong>           
+      </font>
+   </i>
+</marquee> 
+<script type="text/javascript">
+	var today = new Date();
+	document.getElementById('time').innerHTML=today;
+</script>
+
+		<div class="jumbotron">
+			<h3>Add Task</h3>
+			<form id="taskInputForm">
+				<div  class="form-group">
+					<label for="taskNameInput">Task:</label>
+					<input type="text" class="form-control" id="taskNameInput" placeholder="Task">
+					
+				</div>
+				<div class="form-group">
+					<label for="priorityInput">Priority:</label>
+					<select class="form-control" id="priorityInput">
+						<option value="Low">Urgernt</option>
+						<option value="Low">Very Urgernt</option>
+						<option value="Low">Important</option>
+						<option value="Medium">Less Important</option>
+						<option value="High">Don't rush !!</option>
+						
+					</select>
+					
+				</div>
+				<div  class="form-group">
+					<label for="locationInput">Location:</label>
+					<input type="text" class="form-control" id="locationInput" placeholder="Place">
+					
+				</div>
+				<div  class="form-group">
+					<label for="contactInput">Contact:</label>
+					<input type="text" class="form-control" id="contactInput" placeholder="Persons brief">
+					
+				</div>
+				<button  type="submit" class="btn btn-primary" id="submitTask">Add Tasks</button>
+			</form>
+		</div>
+		<div class="col-lg-12">
+				<div id="tasksList">
+					
+				</div>
+			
+		</div>
+		
+	</div>
+
+	<script type="text/javascript" src="todo.js"></script>
+	
+	<!-- loading ajax library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+	<!-- loading bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<!-- generates unique identifiers for tasks -->
+	<script src="http://chancejs.com/chance.min.js"></script> 
+
+
+</body>
+</html>
